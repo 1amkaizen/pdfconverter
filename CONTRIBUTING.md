@@ -4,7 +4,7 @@ Terima kasih atas minat Anda untuk berkontribusi ke proyek ini! Berikut adalah b
 
 ## Cara Berkontribusi
 
-1. Silakan buka [Issues](https://github.com/namapemilik/proyek/issues) untuk melihat tugas-tugas yang bisa Anda kerjakan atau buat tugas baru jika perlu.
+1. Silakan buka [Issues](https://github.com/1amkaizen/pdfconverter/issues) untuk melihat tugas-tugas yang bisa Anda kerjakan atau buat tugas baru jika perlu.
 2. Lakukan *fork* repositori ini.
 3. *Clone* repositori yang sudah Anda *fork*.
 4. Lakukan perubahan pada kode sesuai dengan tugas yang akan Anda selesaikan.
