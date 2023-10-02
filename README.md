@@ -54,4 +54,4 @@ func main() {
 ```
 
 ### Kontribusi
-Jika Anda ingin berkontribusi pada proyek ini, silakan buka CONTRIBUTING.md untuk panduan kontribusi.
+Jika Anda ingin berkontribusi pada proyek ini, silakan buka [CONTRIBUTING.md](https://github.com/1amkaizen/pdfconverter/edit/main/CONTRIBUTING.md ) untuk panduan kontribusi.
