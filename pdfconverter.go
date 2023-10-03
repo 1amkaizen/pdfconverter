@@ -8,21 +8,9 @@ import (
 	"os/exec"
 )
 
-func PrintConvertedText() error {
-	cmd := exec.Command("cat", "output.txt")
-	cmd.Stdout = os.Stdout
-	cmd.Stderr = os.Stderr
-
-	err := cmd.Run()
-	if err != nil {
-		return fmt.Errorf("error printing converted text: %v", err)
-	}
-
-	return nil
-}
-
+// ConvertPDFToText converts a PDF file to text and prints the result to stdout.
 func ConvertPDFToText(inputPDFPath string) error {
-	cmd := exec.Command("pdftotext", inputPDFPath, "output.txt")
+	cmd := exec.Command("pdftotext", inputPDFPath, "-")
 	cmd.Stdout = os.Stdout
 	cmd.Stderr = os.Stderr
 
