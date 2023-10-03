@@ -30,7 +30,7 @@ fmt.Println("PDF berhasil diubah menjadi teks.")
 
 ### Contoh Penggunaan
 Berikut adalah contoh penggunaan library untuk mengkonversi file PDF menjadi teks:
-```
+```go
 package main
 
 import (
