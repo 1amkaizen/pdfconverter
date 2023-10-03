@@ -1,5 +1,3 @@
-// pdfconverter.go
-
 package pdfconverter
 
 import (
@@ -8,9 +6,9 @@ import (
 	"os/exec"
 )
 
-// ConvertPDFToText converts a PDF file to text and prints the result to stdout.
-func ConvertPDFToText(inputPDFPath string) error {
-	cmd := exec.Command("pdftotext", inputPDFPath, "-")
+// ConvertPDFToText converts a PDF file to text.
+func ConvertPDFToText(inputPDFPath, outputTextPath string) error {
+	cmd := exec.Command("pdftotext", inputPDFPath, outputTextPath)
 	cmd.Stdout = os.Stdout
 	cmd.Stderr = os.Stderr
 
