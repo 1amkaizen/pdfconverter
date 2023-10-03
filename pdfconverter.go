@@ -7,8 +7,8 @@ import (
 )
 
 // ConvertPDFToText converts a PDF file to text.
-func ConvertPDFToText(inputPDFPath string) error {
-	cmd := exec.Command("pdftotext", inputPDFPath, "-")
+func ConvertPDFToText(inputPDFPath, outputTextPath string) error {
+	cmd := exec.Command("pdftotext", inputPDFPath, outputTextPath)
 	cmd.Stdout = os.Stdout
 	cmd.Stderr = os.Stderr
 
