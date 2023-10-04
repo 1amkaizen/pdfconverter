@@ -4,16 +4,23 @@ Library untuk mengkonversi file PDF menjadi teks menggunakan perintah pdftotext.
 
 ## Penggunaan
 
-1. Install library ini dengan menambahkannya sebagai dependency pada file `go.mod` proyek Anda:
+1. Install poppler-utils
+
+```
+sudo apt-get install poppler-utils
+```
+ 
+
+3. Install library ini dengan menambahkannya sebagai dependency pada file `go.mod` proyek Anda:
 ```
 go get github.com/1amkaizen/pdfconverter
 ```
 
-2. Import library ini di proyek Anda:
+3. Import library ini di proyek Anda:
 ```go
 import "github.com/1amkaizen/pdfconverter"
 ```
-3. Panggil fungsi ConvertPDFToText untuk mengkonversi file PDF menjadi teks:
+4. Panggil fungsi ConvertPDFToText untuk mengkonversi file PDF menjadi teks:
 ```go
 pdfFilePath := "path/to/input.pdf"
 outputFilePath := "path/to/output.txt"
