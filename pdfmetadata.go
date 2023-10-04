@@ -5,6 +5,7 @@ package pdfconverter
 import (
     "fmt"
     "os/exec"
+    "os"
 )
 
 // GetPDFMetadata retrieves metadata from a PDF file.
