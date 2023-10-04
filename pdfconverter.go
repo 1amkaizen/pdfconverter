@@ -6,7 +6,6 @@ import (
 	"fmt"
 	"os"
 	"os/exec"
-	"github.com/1amkaizen/pdfconverter/features" // Sesuaikan dengan path package yang sesuai
 )
 
 // ConvertPDFToText converts a PDF file to text.
