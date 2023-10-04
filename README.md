@@ -60,5 +60,39 @@ func main() {
 
 ```
 
+### Contoh lain
+```go
+package main
+
+import (
+	"fmt"
+	"os"
+	"github.com/1amkaizen/pdfconverter" // Sesuaikan dengan path package yang sesuai
+)
+
+func main() {
+	if len(os.Args) < 3 {
+		fmt.Println("Usage: main inputPDFPath outputTextPath")
+		return
+	}
+
+	inputPDFPath := os.Args[1]
+	outputTextPath := os.Args[2]
+
+	err := pdfconverter.ConvertPDFToText(inputPDFPath, outputTextPath)
+	if err != nil {
+		fmt.Printf("Error: %v\n", err)
+		return
+	}
+
+	fmt.Println("PDF converted to text successfully.")
+}
+```
+Untuk menjalankannya:
+```
+go run main.go input.pdf output.txt
+
+```
+
 ### Kontribusi
 Jika Anda ingin berkontribusi pada proyek ini, silakan buka [CONTRIBUTING.md](https://github.com/1amkaizen/pdfconverter/edit/main/CONTRIBUTING.md ) untuk panduan kontribusi.
