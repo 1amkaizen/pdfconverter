@@ -19,7 +19,6 @@ func ConvertPDFToText(inputPDFPath, outputTextPath string) error {
 		return fmt.Errorf("error converting PDF to text: %v", err)
 	}
 
-	
 	return nil
 }
 
