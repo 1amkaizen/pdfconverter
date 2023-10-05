@@ -22,15 +22,14 @@ func ConvertPDFToText(inputPDFPath, outputTextPath string) error {
 	return nil
 }
 
-// ConvertPDFToHTML converts a PDF file to HTML.
-func ConvertPDFToHTML(inputPDFPath, outputHTMLPath string) error {
-	cmd := exec.Command("pdftohtml", inputPDFPath, outputHTMLPath)
+// GetPDFMetadata retrieves metadata from a PDF file.
+func GetPDFMetadata(inputPDFPath string) error {
+	cmd := exec.Command("pdfinfo", inputPDFPath)
 	cmd.Stdout = os.Stdout
 	cmd.Stderr = os.Stderr
-
 	err := cmd.Run()
 	if err != nil {
-		return fmt.Errorf("error converting PDF to HTML: %v", err)
+		return fmt.Errorf("error getting PDF metadata: %v", err)
 	}
 
 	return nil
