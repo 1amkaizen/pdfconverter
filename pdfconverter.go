@@ -19,9 +19,7 @@ func ConvertPDFToText(inputPDFPath, outputTextPath string) error {
 		return fmt.Errorf("error converting PDF to text: %v", err)
 	}
 
-	// Call the new feature
-	features.NewFeature()
-
+	
 	return nil
 }
 
