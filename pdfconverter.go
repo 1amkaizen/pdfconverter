@@ -22,15 +22,4 @@ func ConvertPDFToText(inputPDFPath, outputTextPath string) error {
 	return nil
 }
 
-// ConvertTextToPDF converts a text file to PDF.
-func ConvertTextToPDF(inputTextPath, outputPDFPath string) error {
-    cmd := exec.Command("pdftotext", inputTextPath, outputPDFPath)
-    cmd.Stdout = os.Stdout
-    cmd.Stderr = os.Stderr
-    err := cmd.Run()
-    if err != nil {
-        return fmt.Errorf("error converting text to PDF: %v", err)
-    }
 
-    return nil
-}
